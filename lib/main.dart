@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ma_base_app/utils/theme.dart';
 
 void main() {
   runApp(const App());
@@ -10,7 +11,7 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: AppHome());
+    return MaterialApp(theme: AppTheme.lightTheme, darkTheme: AppTheme.darkTheme, themeMode: ThemeMode.dark, home: AppHome());
   }
 }
 
@@ -21,15 +22,16 @@ class AppHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('App home'), leading: Icon(Icons.ondemand_video), backgroundColor: Colors.redAccent, foregroundColor: Colors.white),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      appBar: AppBar(title: Text('App home'), leading: Icon(Icons.ondemand_video)),
       floatingActionButton: FloatingActionButton(onPressed: () {}, child: Icon(Icons.shopping_cart)),
       body: Container(
         padding: EdgeInsets.all(20),
         child: ListView(
           children: [
-            Text('Heading'),
-            Text('sub-heading'),
-            Text('paragraph'),
+            Text('Heading', style: Theme.of(context).textTheme.headlineLarge),
+            Text('Sub-heading', style: Theme.of(context).textTheme.titleLarge),
+            Text('Paragraph', style: Theme.of(context).textTheme.bodyLarge),
             ElevatedButton(onPressed: () {}, child: Text('Elevated Button')),
             OutlinedButton(onPressed: () {}, child: Text('Outlined Button')),
             Container(padding: EdgeInsets.all(20), child: Image.asset('assets/img/minion.png')),
