@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ma_base_app/screens/welcome_screens.dart';
 import 'package:ma_base_app/utils/theme.dart';
 
 void main() {
@@ -11,33 +12,15 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(theme: AppTheme.lightTheme, darkTheme: AppTheme.darkTheme, themeMode: ThemeMode.system, home: AppHome());
-  }
-}
-
-// App Home
-class AppHome extends StatelessWidget {
-  const AppHome({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      appBar: AppBar(title: Text('App home'), leading: Icon(Icons.ondemand_video)),
-      floatingActionButton: FloatingActionButton(onPressed: () {}, child: Icon(Icons.shopping_cart)),
-      body: Container(
-        padding: EdgeInsets.all(20),
-        child: ListView(
-          children: [
-            Text('Heading', style: Theme.of(context).textTheme.headlineLarge),
-            Text('Sub-heading', style: Theme.of(context).textTheme.titleLarge),
-            Text('Paragraph', style: Theme.of(context).textTheme.bodyLarge),
-            ElevatedButton(onPressed: () {}, child: Text('Elevated Button')),
-            OutlinedButton(onPressed: () {}, child: Text('Outlined Button')),
-            Container(padding: EdgeInsets.all(20), child: Image.asset('assets/img/minion.png')),
-          ],
-        ),
-      ),
+    return MaterialApp(
+      // Set Light theme
+      theme: AppTheme.lightTheme,
+      // Set dark theme
+      darkTheme: AppTheme.darkTheme,
+      // Set default theme (system is based on the phone setting)
+      themeMode: ThemeMode.system,
+      // Set landing screen
+      home: WelcomeScreen(),
     );
   }
 }

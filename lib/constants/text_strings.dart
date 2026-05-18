@@ -1,2 +1,2 @@
-const String tAppName = 'appable/';
-const String tAppTagLine = 'Learn to Code. \nFree for Everyone';
+const String tAppName = 'Meliorate Africa App';
+const String tAppTagLine = 'Position you business for success!';
