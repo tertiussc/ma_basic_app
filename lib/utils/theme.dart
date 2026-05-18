@@ -18,6 +18,7 @@ class AppTheme {
     ),
     textTheme: TextTheme(
       headlineLarge: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: Colors.amber),
+      headlineMedium: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
     ),
   );
 
