@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 // Theme Colors
-const tPrimaryColor = Color(0XFFFFE400);
-const tSecondaryColor = Color(0XFF272727);
-const tAccentColor = Color(0XFF001BFF);
+const tMeliorateRed = Color(0XFFEE8265);
+const tMeliorateBlack = Color(0XFF272727);
+const tMeliorateYellow = Color(0XFFBEB841);
 
-const tCardBGColor = Color(0XFF001BFF);
-const tWhiteColor = Color(0XFFFFFFFF);
-const tDarkColor = Color(0XFF000000);
+// const tCardBGColor = Color(0XFFBEB841);
+// const tWhiteColor = Color(0XFFFFFFFF);
+// const tDarkColor = Color(0XFF000000);

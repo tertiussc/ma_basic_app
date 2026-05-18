@@ -48,16 +48,16 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^6.0.0
 
-# Configuration for splash screen
+# Configuration for splash screen (run: "dart run flutter_native_splash:create")
 flutter_native_splash:
   color: "#f7f6f1"
   color_dark: "#272727"
-  image: assets/img/logo.png
-  image_dark: assets/img/logo.png
+  image: assets/img/splash.png
+  image_dark: assets/img/splash.png
   android_12:
-    image: assets/img/logo.png
+    image: assets/img/splash.png
     icon_background_color: "#f7f6f1"
-    image_dark: assets/img/logo.png
+    image_dark: assets/img/splash.png
     icon_background_color_dark: "#272727"
   web: false
 

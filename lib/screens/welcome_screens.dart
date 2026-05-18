@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ma_base_app/constants/colors.dart';
 import 'package:ma_base_app/constants/text_strings.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -7,6 +8,7 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(backgroundColor: tMeliorateRed, title: Text('Meliorate Africa')),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),

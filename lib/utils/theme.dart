@@ -1,42 +1,46 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ma_base_app/constants/colors.dart';
 
 class AppTheme {
   // Make theme private
   AppTheme._();
   // Light Theme
   static ThemeData lightTheme = ThemeData(
-    appBarTheme: AppBarTheme(backgroundColor: Colors.amber),
+    appBarTheme: AppBarTheme(backgroundColor: tMeliorateRed),
     brightness: Brightness.light,
-    colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
-    elevatedButtonTheme: ElevatedButtonThemeData(style: ElevatedButton.styleFrom(backgroundColor: Colors.amberAccent)),
+    // Color scheme is for light theme only
+    colorScheme: ColorScheme.fromSeed(seedColor: tMeliorateRed),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(backgroundColor: tMeliorateRed, foregroundColor: Colors.white),
+    ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
-        foregroundColor: Colors.amber[500],
-        side: BorderSide(color: Colors.amber),
+        foregroundColor: tMeliorateRed,
+        side: BorderSide(color: tMeliorateRed),
       ),
     ),
     textTheme: TextTheme(
-      headlineLarge: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: Colors.amber),
+      headlineLarge: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: tMeliorateRed),
     ),
   );
 
   // Dark Theme
   static ThemeData darkTheme = ThemeData(
-    appBarTheme: AppBarTheme(backgroundColor: Colors.black, foregroundColor: Colors.amber),
+    appBarTheme: AppBarTheme(backgroundColor: Colors.black, foregroundColor: tMeliorateRed),
     brightness: Brightness.dark,
     elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ElevatedButton.styleFrom(backgroundColor: Colors.amberAccent, foregroundColor: Colors.black),
+      style: ElevatedButton.styleFrom(backgroundColor: tMeliorateRed, foregroundColor: Colors.black),
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
-        foregroundColor: Colors.amber[500],
-        side: BorderSide(color: Colors.amber),
+        foregroundColor: tMeliorateRed,
+        side: BorderSide(color: tMeliorateRed),
       ),
     ),
-    floatingActionButtonTheme: FloatingActionButtonThemeData(backgroundColor: Colors.amber, foregroundColor: Colors.black),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(backgroundColor: tMeliorateRed, foregroundColor: Colors.black),
     textTheme: TextTheme(
-      headlineLarge: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: Colors.amberAccent),
+      headlineLarge: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: tMeliorateRed),
     ),
   );
 }

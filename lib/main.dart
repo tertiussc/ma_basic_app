@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ma_base_app/screens/test_app_home.dart';
 import 'package:ma_base_app/screens/welcome_screens.dart';
 import 'package:ma_base_app/utils/theme.dart';
 
@@ -20,7 +21,7 @@ class App extends StatelessWidget {
       // Set default theme (system is based on the phone setting)
       themeMode: ThemeMode.system,
       // Set landing screen
-      home: WelcomeScreen(),
+      home: AppHome(),
     );
   }
 }
