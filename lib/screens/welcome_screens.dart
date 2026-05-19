@@ -1,19 +1,46 @@
 import 'package:flutter/material.dart';
-import 'package:ma_base_app/constants/colors.dart';
-import 'package:ma_base_app/constants/text_strings.dart';
+import 'package:ma_base_app/constants/image_strings.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // get screen height
+    double screenHeight = MediaQuery.of(context).size.height;
+    // Build screen
     return Scaffold(
-      appBar: AppBar(backgroundColor: tMeliorateRed, title: Text('Meliorate Africa')),
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(children: [Text(tAppName, style: Theme.of(context).textTheme.headlineLarge)]),
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Image(
+            image: AssetImage(tLaud),
+            // set image to take up 50% of the screen
+            height: screenHeight * 0.5,
+          ),
+          Column(
+            children: [
+              Text('Welcome to Meliorate Africa', style: Theme.of(context).textTheme.headlineMedium),
+              Text('Where rubber meets the road.', style: Theme.of(context).textTheme.bodyLarge),
+            ],
+          ),
+          // SizedBox(height: 50),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Expanded(
+                  child: OutlinedButton(onPressed: () {}, child: Text('Login'.toUpperCase())),
+                ),
+                SizedBox(width: 30),
+                Expanded(
+                  child: ElevatedButton(onPressed: () {}, child: Text('Sign Up'.toUpperCase())),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

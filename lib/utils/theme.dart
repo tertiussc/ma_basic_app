@@ -20,9 +20,7 @@ class AppTheme {
         side: BorderSide(color: tMeliorateRed),
       ),
     ),
-    textTheme: TextTheme(
-      headlineLarge: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: tMeliorateRed),
-    ),
+    textTheme: AppTheme.textTheme,
   );
 
   // Dark Theme
@@ -39,8 +37,13 @@ class AppTheme {
       ),
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(backgroundColor: tMeliorateRed, foregroundColor: Colors.black),
-    textTheme: TextTheme(
-      headlineLarge: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: tMeliorateRed),
-    ),
+    textTheme: AppTheme.textTheme,
+  );
+
+  // Text Theme for both light and dark
+  static TextTheme textTheme = TextTheme(
+    headlineLarge: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: tMeliorateRed),
+    headlineMedium: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: tMeliorateRed),
+    bodyLarge: GoogleFonts.montserrat(),
   );
 }

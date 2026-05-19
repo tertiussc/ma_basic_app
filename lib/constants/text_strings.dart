@@ -1,2 +1,2 @@
 const String tAppName = 'Meliorate Africa App';
-const String tAppTagLine = 'Position you business for success!';
+const String tAppTagLine = 'Position your business for success!';
