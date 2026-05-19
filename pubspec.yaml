@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   google_fonts: ^8.1.0
   flutter_native_splash: ^2.4.7
+  liquid_swipe: ^3.1.0
+  smooth_page_indicator: ^2.0.1
 
 dev_dependencies:
   flutter_test:
@@ -48,7 +50,7 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^6.0.0
 
-# Configuration for splash screen (run: "dart run flutter_native_splash:create")
+# Configuration for splash screen (to create OR update run: "dart run flutter_native_splash:create")
 flutter_native_splash:
   color: "#f7f6f1"
   color_dark: "#272727"

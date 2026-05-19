@@ -4,3 +4,5 @@ const String tSplashImage = 'assets/img/minion.png';
 const String tGoogles = 'assets/img/minion_googles.png';
 const String tLaud = 'assets/img/minion_laud.png';
 const String tPhone = 'assets/img/minion_phone.png';
+const String tSwim = 'assets/img/Stuart_29.png';
+const String tRainbow = 'assets/img/rainbow.png';

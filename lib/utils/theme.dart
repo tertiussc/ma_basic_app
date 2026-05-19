@@ -44,6 +44,8 @@ class AppTheme {
   static TextTheme textTheme = TextTheme(
     headlineLarge: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: tMeliorateRed),
     headlineMedium: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: tMeliorateRed),
-    bodyLarge: GoogleFonts.montserrat(),
   );
+  // Swipe screen styles
+  static TextStyle swipeTitle = GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 22);
+  static TextStyle swipeText = GoogleFonts.montserrat(color: Colors.white, fontSize: 20);
 }

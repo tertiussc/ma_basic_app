@@ -24,7 +24,6 @@ class WelcomeScreen extends StatelessWidget {
               Text('Where rubber meets the road.', style: Theme.of(context).textTheme.bodyLarge),
             ],
           ),
-          // SizedBox(height: 50),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25),
             child: Row(
