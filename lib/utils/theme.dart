@@ -20,6 +20,7 @@ class AppTheme {
         side: BorderSide(color: tMeliorateRed),
       ),
     ),
+
     textTheme: AppTheme.textTheme,
   );
 
@@ -48,4 +49,8 @@ class AppTheme {
   // Swipe screen styles
   static TextStyle swipeTitle = GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 22);
   static TextStyle swipeText = GoogleFonts.montserrat(color: Colors.white, fontSize: 20);
+
+  // Login/SignUp Text Styles
+  static TextStyle loginTitle = GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 22, color: tMeliorateRed);
+  static TextStyle loginText = GoogleFonts.montserrat(fontSize: 20, color: tMeliorateRed);
 }

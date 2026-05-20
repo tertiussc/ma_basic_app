@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:ma_base_app/constants/image_strings.dart';
-import 'package:ma_base_app/shared_widgets/animation_widget.dart';
+import 'package:ma_base_app/screens/login_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -15,6 +15,7 @@ class WelcomeScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          // Animated Picture
           Animate(
             effects: [
               // SlideEffect(delay: Duration(milliseconds: 100), duration: Duration(milliseconds: 2500), begin: Offset(-5, 0), curve: Curves.ease),
@@ -39,7 +40,12 @@ class WelcomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Expanded(
-                  child: OutlinedButton(onPressed: () {}, child: Text('Login'.toUpperCase())),
+                  child: OutlinedButton(
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (ctx) => LoginScreen()));
+                    },
+                    child: Text('Login'.toUpperCase()),
+                  ),
                 ),
                 SizedBox(width: 30),
                 Expanded(
