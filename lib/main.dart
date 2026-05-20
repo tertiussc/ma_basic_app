@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ma_base_app/screens/login_screen.dart';
-import 'package:ma_base_app/screens/onboarding_screen.dart';
 import 'package:ma_base_app/screens/welcome_screens.dart';
 import 'package:ma_base_app/utils/theme.dart';
 
