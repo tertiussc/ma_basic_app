@@ -66,7 +66,7 @@ class LoginScreen extends StatelessWidget {
                         Text('Don\'t have an account?'),
                         TextButton(
                           onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (ctx) => SignupScreen()));
+                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SignupScreen()));
                           },
                           child: Text('Signup', style: TextStyle(color: tMeliorateRed)),
                         ),
