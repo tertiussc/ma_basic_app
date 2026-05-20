@@ -53,4 +53,8 @@ class AppTheme {
   // Login/SignUp Text Styles
   static TextStyle loginTitle = GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 22, color: tMeliorateRed);
   static TextStyle loginText = GoogleFonts.montserrat(fontSize: 20, color: tMeliorateRed);
+
+  // Bottom Drawer styles
+  static TextStyle drawTitle = GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 22);
+  static TextStyle drawText = GoogleFonts.montserrat(fontSize: 18);
 }

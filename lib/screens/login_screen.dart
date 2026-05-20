@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:ma_base_app/constants/colors.dart';
 import 'package:ma_base_app/constants/image_strings.dart';
 import 'package:ma_base_app/constants/sizes.dart';
+import 'package:ma_base_app/screens/forget_password_email_screen.dart';
+import 'package:ma_base_app/screens/forgot_password_phone_screen.dart';
 import 'package:ma_base_app/screens/signup_screen.dart';
+import 'package:ma_base_app/shared_widgets/custom_drawer_button.dart';
 import 'package:ma_base_app/shared_widgets/styled_form_field.dart';
 import 'package:ma_base_app/utils/theme.dart';
 import 'package:sign_in_button/sign_in_button.dart';
@@ -36,12 +39,46 @@ class LoginScreen extends StatelessWidget {
                       StyledFormField(label: 'Email', icon: Icons.person_outlined, textInputType: TextInputType.emailAddress),
                       StyledFormField(label: 'Password', icon: Icons.fingerprint, obscureText: true),
                       TextButton(
-                        onPressed: null,
+                        onPressed: () {
+                          showModalBottomSheet(
+                            context: context,
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadiusGeometry.circular(15)),
+                            builder: (context) {
+                              return Container(
+                                padding: EdgeInsets.all(tDefaultPadding),
+                                child: Column(
+                                  children: [
+                                    Text('Make a Selection!', style: AppTheme.drawTitle),
+                                    Text('Select one of the options below to reset your password', style: AppTheme.drawText),
+                                    SizedBox(height: 30),
+                                    CustomDrawerButton(
+                                      drawerButtonTitle: 'Email',
+                                      drawerButtonText: 'Reset via email verification',
+                                      drawerButtonIcon: Icons.email_outlined,
+                                      onTab: () {
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => ForgotPasswordEmailScreen()));
+                                      },
+                                    ),
+                                    SizedBox(height: 15),
+                                    CustomDrawerButton(
+                                      drawerButtonTitle: 'Phone',
+                                      drawerButtonText: 'Reset via phone authentication',
+                                      drawerButtonIcon: Icons.phone_android,
+                                      onTab: () {
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => ForgotPasswordPhoneScreen()));
+                                      },
+                                    ),
+                                  ],
+                                ),
+                              );
+                            },
+                          );
+                        },
                         child: Text('Forgot Password?', style: TextStyle(color: tMeliorateRed)),
                       ),
                       SizedBox(
                         width: double.infinity,
-                        child: ElevatedButton(onPressed: () {}, child: Text('Login')),
+                        child: ElevatedButton(onPressed: () {}, child: Text('Login'.toUpperCase())),
                       ),
                     ],
                   ),
