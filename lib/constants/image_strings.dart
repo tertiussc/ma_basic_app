@@ -7,3 +7,6 @@ const String tPhone = 'assets/img/minion_phone.png';
 const String tSwim = 'assets/img/Stuart_29.png';
 const String tRainbow = 'assets/img/rainbow.png';
 const String tThink = 'assets/img/think.png';
+const String tProfile = 'assets/img/logo.png';
+const String tRun = 'assets/img/run.png';
+const String tPoint = 'assets/img/point.png';

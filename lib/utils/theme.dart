@@ -7,7 +7,7 @@ class AppTheme {
   AppTheme._();
   // Light Theme
   static ThemeData lightTheme = ThemeData(
-    appBarTheme: AppBarTheme(backgroundColor: tMeliorateRed),
+    appBarTheme: AppBarTheme(backgroundColor: Colors.transparent, foregroundColor: tMeliorateRed),
     brightness: Brightness.light,
     // Color scheme is for light theme only
     colorScheme: ColorScheme.fromSeed(seedColor: tMeliorateRed),
@@ -26,7 +26,7 @@ class AppTheme {
 
   // Dark Theme
   static ThemeData darkTheme = ThemeData(
-    appBarTheme: AppBarTheme(backgroundColor: Colors.black, foregroundColor: tMeliorateRed),
+    appBarTheme: AppBarTheme(backgroundColor: Colors.transparent, foregroundColor: tMeliorateRed),
     brightness: Brightness.dark,
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(backgroundColor: tMeliorateRed, foregroundColor: Colors.black),
@@ -45,6 +45,9 @@ class AppTheme {
   static TextTheme textTheme = TextTheme(
     headlineLarge: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: tMeliorateRed),
     headlineMedium: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: tMeliorateRed),
+    labelMedium: GoogleFonts.montserrat(),
+    bodyLarge: GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: Colors.black),
+    bodyMedium: GoogleFonts.montserrat(color: Colors.black),
   );
   // Swipe screen styles
   static TextStyle swipeTitle = GoogleFonts.montserrat(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 22);
