@@ -91,7 +91,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 // push new route
                 Navigator.push(context, MaterialPageRoute(builder: (ctx) => WelcomeScreen()));
               },
-              child: Text('Skip', style: TextStyle(color: Colors.white)),
+              child: Icon(Icons.close, color: Colors.white, size: 20),
             ),
           ),
           Positioned(bottom: 10, child: AnimatedSmoothIndicator(activeIndex: controller.currentPage, count: 3)),
