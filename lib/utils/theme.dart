@@ -55,6 +55,6 @@ class AppTheme {
   static TextStyle loginText = GoogleFonts.montserrat(fontSize: 20, color: tMeliorateRed);
 
   // Bottom Drawer styles
-  static TextStyle drawTitle = GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 22);
-  static TextStyle drawText = GoogleFonts.montserrat(fontSize: 18);
+  static TextStyle drawTitle = GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 22, color: Colors.black);
+  static TextStyle drawText = GoogleFonts.montserrat(fontSize: 18, color: Colors.black);
 }

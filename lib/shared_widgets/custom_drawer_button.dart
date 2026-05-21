@@ -23,7 +23,7 @@ class CustomDrawerButton extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Icon(drawerButtonIcon, size: 60),
+            Icon(drawerButtonIcon, size: 60, color: Colors.black),
             SizedBox(width: 10),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,

@@ -48,8 +48,8 @@ class LoginScreen extends StatelessWidget {
                                 padding: EdgeInsets.all(tDefaultPadding),
                                 child: Column(
                                   children: [
-                                    Text('Make a Selection!', style: AppTheme.drawTitle),
-                                    Text('Select one of the options below to reset your password', style: AppTheme.drawText),
+                                    Text('Make a Selection!', style: AppTheme.loginTitle),
+                                    Text('Select one of the options below to reset your password', style: AppTheme.loginText),
                                     SizedBox(height: 30),
                                     CustomDrawerButton(
                                       drawerButtonTitle: 'Email',
