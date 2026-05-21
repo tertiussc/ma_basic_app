@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ma_base_app/screens/welcome_screens.dart';
 import 'package:ma_base_app/utils/theme.dart';
 
+/* Check flutter_launcher_icon  - To change the app icon */
+/* Enable zoom wrap widget with "InteractiveViewer"  */
 void main() {
   runApp(const App());
 }
