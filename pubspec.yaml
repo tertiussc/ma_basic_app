@@ -41,6 +41,7 @@ dependencies:
   flutter_animate: ^4.5.2
   sign_in_button: ^5.0.0
   flutter_launcher_icons: ^0.14.4
+  flutter_otp_text_field: ^1.5.1+1
 
 dev_dependencies:
   flutter_test:

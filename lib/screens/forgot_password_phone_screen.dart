@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ma_base_app/constants/image_strings.dart';
 import 'package:ma_base_app/constants/sizes.dart';
+import 'package:ma_base_app/screens/otp_screen.dart';
 import 'package:ma_base_app/shared_widgets/styled_form_field.dart';
 import 'package:ma_base_app/utils/theme.dart';
 
@@ -25,7 +26,12 @@ class ForgotPasswordPhoneScreen extends StatelessWidget {
                     SizedBox(height: 15),
                     SizedBox(
                       width: double.infinity,
-                      child: ElevatedButton(onPressed: () {}, child: Text('Send Request'.toUpperCase())),
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => OtpScreen()));
+                        },
+                        child: Text('Send Request'.toUpperCase()),
+                      ),
                     ),
                   ],
                 ),
