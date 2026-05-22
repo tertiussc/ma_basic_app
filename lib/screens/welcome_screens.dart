@@ -21,8 +21,8 @@ class WelcomeScreen extends StatelessWidget {
           Animate(
             effects: [
               // SlideEffect(delay: Duration(milliseconds: 100), duration: Duration(milliseconds: 2500), begin: Offset(-5, 0), curve: Curves.ease),
-              FadeEffect(duration: Duration(milliseconds: 3000)),
-              ScaleEffect(duration: Duration(milliseconds: 3000)),
+              FadeEffect(duration: Duration(milliseconds: 1500)),
+              ScaleEffect(duration: Duration(milliseconds: 1500)),
             ],
             child: InteractiveViewer(
               child: Image(
